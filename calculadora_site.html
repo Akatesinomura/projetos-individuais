@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Imersão Dev - Aula 02
+    </title>
+<style>
+    body {
+    font-family: 'Roboto Mono',monospace;
+    min-height: 854px;
+    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-certa.png');
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .calculadora {
+    width: 264px;
+    height:360px;
+    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-calc.png');
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  h2 {
+    position: absolute;
+    font-size:16px;
+    font-weight:bold;
+    top: 142px;
+    left: calc(50% - 72.5px);
+    width: 145px;
+    text-align:center;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }
+
+h3 {
+    position: absolute;
+    color: #ffffff;
+    left: 10px;
+    top: 10px;
+    font-size:14px;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px blue;
+}  
+
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Calculadora
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
+            alt="">
+        <div class="calculadora">
+        </div>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <h2></h2>
+    <h3>Operações:<br>Soma<br>Subtração<br>Multiplicação<br>Divisão<br>Potência<br>Raíz Quadrada<br></h3>
+    
+<script>
+function pageFullyLoaded(e) {
+
+var operação = prompt("Digite a operação desejada")
+
+if (operação == "Soma" || operação == "Subtração" || operação == "Multiplicação" || operação == "Divisão") {
+    var valor1 = parseFloat(prompt("Insira o primeiro valor"))
+    var valor2 = parseFloat(prompt("Insire o segundo valor"))
+} else if (operação == "Raíz Quadrada" || operação == "Potência") {
+    var valor3 = parseFloat(prompt("Insira o valor"))
+} else {
+    document.write("<h2>" + "Inválida" + "</h2>")
+}
+
+if (operação == "Soma") {
+var result = parseFloat(valor1 + valor2)
+} else if (operação == "Subtração") {
+    var result = parseFloat(valor1 - valor2)
+} else if (operação == "Multiplicação") {
+    var result = parseFloat(valor1 * valor2)
+} else if (operação == "Divisão") {
+    var result = parseFloat(valor1 / valor2)
+} else if (operação == "Raíz Quadrada") {
+    var result = parseFloat(Math.sqrt(valor3))
+} else if (operação == "Potência") {
+    var result = parseFloat(valor3 * valor3)
+}
+
+var resultTrue = result.toFixed(2)
+
+if (operação == "Soma") {
+    document.write( "<h2>" + valor1 + " + " + valor2 + " = " + resultTrue + "</h2>" )
+    } else if (operação == "Subtração") {
+        document.write("<h2>" + valor1 + " - " + valor2 + " = " + resultTrue + "</h2>")
+    } else if (operação == "Multiplicação") {
+        document.write("<h2>" + valor1 + " x " + valor2 + " = " + resultTrue + "</h2>")
+    } else if (operação == "Divisão") {
+        document.write("<h2>" + valor1 + " / " + valor2 + " = " + resultTrue + "</h2>")
+    } else if (operação == "Raíz Quadrada") {
+        document.write("<h2>" + "√" + valor3 + " = " + resultTrue + "</h2>")
+    } else if (operação == "Potência") {
+        document.write("<h2>" + valor3 + " x " + valor3 + " = " + resultTrue + "</h2>")
+    }
+}
+</script>
+
+</body>
+</html>

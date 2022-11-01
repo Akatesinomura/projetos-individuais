@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6 - Projeto de Webpage</title>
+    <style>
+        body {
+            background-image: url(https://www.zastavki.com/pictures/2560x1600/2018Ships_Big_pirate_ship_in_the_sea_at_sunset_123613_19.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            color: #ffffff
+        } 
+
+        p {
+            margin-left: 250px;
+            margin-right: 250px;
+            font-size: 16px;
+            text-shadow: 1.5px 1.5px 1.5px black;
+            font-weight: bold;
+            color: #ffffff
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 23px;
+            text-shadow: 2px 2px 2px black;
+            color: #ffffff
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 47px;
+            text-shadow: 3px 3px 3px black;
+            color: #ffffff 
+        }
+
+        .list-header {
+            text-align: center;
+            color: #ffffff
+        }
+
+        ul {
+            margin-left: 250px;
+            margin-right: 250px;
+            font-size: 14px;
+            text-shadow: 1.5px 1.5px 1.5px black;
+            font-weight: bold;
+            color: #ffffff
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 2px 2px 2px black;
+            color: #ffffff
+        }
+
+        /*.ship {
+            margin-left: 525px;
+        }
+
+        .iframe-pirates{
+            margin-left: 400;
+        }*/
+
+        .iframe-e-img {
+            margin-left: 200px;
+        }
+
+        h4 {
+            text-shadow: 1px 1px 1px black;
+            position: static; 
+            text-align: right;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<article>
+    <header>
+        <h1 title="cabeçalho">Pirates!</h1>
+        <h2 title="texto introdutório"> How old pirate ships and crew used to operate, overly-simplified</h2>
+    </header>
+</article>
+<body>
+    <h3>Why would people join the pirates?</h3>
+    <p>Although a life of crime sounds very risky, if you compare to the standard work 
+    conditions of the era, it wasnt so bad. A lot of people lived uneducated lives, capable only of 
+    menial work that paid poorly for many hours, or you could join a ship from the 
+    crown, where you would be paid poorly and be disrespected every turn by higher 
+    ranking officials. So the offer to participate in a crew with little to no 
+    hierarchy and be able to directly claim part of the loot from a plunder 
+    instead of being paid a low wage is indeed a sweeter deal.</p>
+    <h3>Living in the ship</h3>
+    <p>Well, the deal must have a catch, right? And it does! Living in a pirate ship was one of the worst experiences you could have in your life. 
+    Ships would often me overcrowded, to maximize manpower, and everyone would often be sick, due to disease spreading witihin the ranks,
+     food was also terrible: shoe-sole consistency beef jerky, hardtack with bugs, fruits only if you had the luck to steal them from another ship. </p>        
+    <h3>Who was the crew?</h3>
+    <p class="list-header">The Crew consisted of 3 types of people: 
+    <ul><li>Crewmembers: used for combat and basic ship keeping tasks (this included the ship "medic")</li><li>Quartermaster: handled the ship's economy, hiring, loot spliting and repairs</li><li>Captain: had to keep the crew's morale up, was the battle tactician and leader and was the one who did the "branding" of the pirates, to intimidate merchant ships</li></ul></p>   
+    <h3> Click on the Crewmember, Quartermaster or Captain!</h3>
+    <article class="iframe-e-img">
+    <img class="ship" title="Ship" src="Screenshot_1622.png" alt="Pirate Ship" usemap="#pirate">
+    <map name="pirate">
+        <area shape="rect" coords="47,95,107,177" href="atividade6-vídeos.html#captain" target="janela"/>
+        <area shape="rect" coords="141,158,186,220" href="atividade6-vídeos.html#quartermaster" target="janela">
+        <area shape="rect" coords="213,125,264,189" href="atividade6-vídeos.html#crewmate" target="janela"/>
+    </map>
+    <iframe id="iframe-pirates" height="316" width="560" src="atividade6-vídeos.html" name="janela"></iframe>
+    </article>
+    <h4>Made by Matheus Marcondes</h4>
+</body>
+</html>
